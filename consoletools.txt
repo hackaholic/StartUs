@@ -1,0 +1,10 @@
+Suppose we have an access.log web server. How do I use the standard console 
+tools to find ten IP addresses from which there were most requests?
+
+
+Using awk:
+awk '{arr[$1]++}END{for(var in arr){print var, arr[var]}}' access.log | sort -k 2n | tail -n 10
+
+
+Using python:
+Please check python program ipRequestCount.py 
