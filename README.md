@@ -1,2 +1,2 @@
 # StartUs
-Open to any advice and Sugessition
+Open to any advice and suggestion
